@@ -28,7 +28,7 @@ for y in range(N):
                     nx = sx + dx
                     if 0 <= ny < N and 0 <= nx < M:
                         if lst[ny][nx] == 1 and not visited[ny][nx]:
-                            visited[ny][nx] = True
+                            visited[ny][nx] = 1
                             current_area += 1
                             q.append((ny, nx))
             
